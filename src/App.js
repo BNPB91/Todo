@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
 import Header from './components/Header';
 import Form from './components/Form';
 import TodoList from './components/TodoList';
@@ -7,6 +7,7 @@ import TodoList from './components/TodoList';
 import './App.css';
 
 const App = () => {
+  
   // Hooks
   const initialState = JSON.parse(localStorage.getItem("todos")) || [];
   const[input, setInput] = useState("");
@@ -23,6 +24,7 @@ const App = () => {
       <div>
         <Header/>
       </div>
+      
       <div>
         <Form 
         input={input}
